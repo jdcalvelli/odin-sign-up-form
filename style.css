@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+    .left {
+        width: 30%;
+        background-image: url(images/sen-rgP93cPsVEc-unsplash.jpg);
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .logo-area {
+            height: 15%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 158px;
+
+            color: honeydew;
+        }
+
+        .attribution-area {
+            color: honeydew;
+            margin-bottom: 15px;
+        }
+
+            .attribution-area a {
+                color: honeydew;
+            }
+
+    .right {
+        width: 70%;
+    }
+
+        .top-section {
+            height: 35%;
+            background-color: #F5F5F5;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2.8rem;
+
+            padding-left: 50px;
+            padding-right: 250px;
+        }
+
+        .form-section {
+            height: 40%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding-left: 50px;
+
+            position: relative;
+            z-index: 1;
+            box-shadow: 2px 3px 10px grey;
+        }
+
+            .form-section h2 {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                margin-bottom: 1.2rem;
+            }
+
+            form {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .form-left, .form-right {
+                display: flex;
+                flex-direction: column;
+                margin-right: 100px;
+            }
+
+            input {
+                margin-bottom: 1rem;
+            }
+
+            label {
+                font-size: 0.8rem;
+                letter-spacing: 0.1rem;
+
+                color: #5dade2;
+                opacity: 0.6;
+            }
+
+        .bottom-section {
+            height: 25%;
+            background-color: #F5F5F5;
+
+            padding-left: 50px;
+        }
+
+            .create-account {
+                height: 20%;
+                width: 20%;
+
+                margin-top: 2rem;
+
+                border-radius: 15px;
+                border: 5px solid #5dade2;
+                
+                font-family: 'Josefin Sans', sans-serif;
+            }
+
+            .create-account:hover {
+
+                background-color:  #5dade2;
+                color:honeydew;
+            }
+
+            .login-prompt {
+                margin-top: 2rem;
+            }
