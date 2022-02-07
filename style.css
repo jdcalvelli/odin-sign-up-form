@@ -39,6 +39,16 @@ body {
             color: honeydew;
         }
 
+        .logo-area h1::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;          
+            content: '\f1b3';
+
+            font-size: 3rem;
+
+            margin-right: 10px;
+        }
+
         .attribution-area {
             color: honeydew;
             margin-bottom: 15px;
