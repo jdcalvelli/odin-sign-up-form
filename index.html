@@ -7,6 +7,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -44,30 +45,33 @@
                 <form action="#" method="get">
                     <div class="form-left">
                         <label for="fname">FIRST NAME</label>
-                        <input id="fname" type="text" name="fname">
+                        <input id="fname" type="text" name="fname" required>
 
                         <label for="email">EMAIL</label>
-                        <input id="email" type="email" name='email'>
+                        <input id="email" type="email" name='email' required>
 
                         <label for="pwd">PASSWORD</label>
-                        <input id="pwd" class="error" type="password" name="pwd">
+                        <input id="pwd" class="error" type="password" name="pwd" required>
                     </div>
 
                     <div class="form-right">
                         <label for="lname">LAST NAME</label>
-                        <input id="lname" type="text" name="lname">
+                        <input id="lname" type="text" name="lname" required>
 
-                        <label for="phone">EMAIL</label>
-                        <input id="phone" type="tel" name='phone'>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input id="phone" type="tel" name='phone' pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
 
                         <label for="confirm-pwd">CONFIRM PASSWORD</label>
-                        <input id="confirm-pwd" class="error" type="password" name="confirm-pwd">
+                        <input id="confirm-pwd" class="error" type="password" name="confirm-pwd" required>
                     </div>
                 </form>
             </div>
 
             <div class="bottom-section">
-                <button class="create-account">Create Account</button>
+
+                <input class="create-account" type="submit" value= "Create Account">
+
+                <!-- <button class="create-account">Create Account</button> -->
 
                 <p class="login-prompt">
                     Already have an account? <a href="#">Log in</a>
